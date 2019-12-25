@@ -24,7 +24,7 @@ inp[1].onblur = function(){
 	noticeList[1].innerHTML = "";
 }
 inp[2].onblur = function(){
-	noticeList[2].innerHTML = hint[2];
+	noticeList[2].innerHTML = "";
 }
 
 /*

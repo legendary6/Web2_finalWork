@@ -1,0 +1,272 @@
+.center{
+	position: relative;
+	width: 100%;
+	height: 1250px;
+	background: url(../images/926637872,167327660.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: black;
+}
+
+.center1{ 
+	position: relative;
+	width: 1270px;
+	height: 650px;
+	margin: 0 auto;
+}
+.center1>div{
+	float: left;
+	width: 700px;
+	height: 650px;
+}
+.center1>img{
+	position: absolute;
+	left: 500px;
+	z-index: 5;
+}
+/*cs中间文字123*/
+.cs1{
+	position: absolute;
+	top: 130px;
+	left: 45px;
+	color: rgb(92 156 252);
+	font-size: 40px;
+	font-weight: 900;
+}
+.cs2{
+	position: absolute;
+	top: 200px;
+	left: 45px;
+	font-size: 45px;
+	font-weight: 400;
+}
+.cs3{
+	position: absolute;
+	top: 330px;
+	left: 45px;
+	width: 580px;
+	line-height: 33px;
+	font-size: 18px;
+	font-weight: 100;
+}
+/*cd中间方框*/
+.cd1{
+	position: absolute;
+	top: 520px;
+	left: 45px;
+	border: 2px solid #000;
+	width: 140px;
+	height: 40px;
+}
+.cd1>span{
+	position: absolute;
+	top: 6.5px;
+	left: 30px;
+	font-size: 18px;
+	font-weight: 100;
+}
+.cd1:hover{
+	background-color: rgb(92 156 252);
+	color: white;
+}
+.cd2{
+	position: absolute;
+	top: 520px;
+	left: 210px;
+	border: 2px solid #000;
+	width: 140px;
+	height: 40px;
+}
+.cd2>span{
+	position: absolute;
+	top: 6.5px;
+	left: 30px;
+	font-size: 18px;
+	font-weight: 100;
+}
+.cd2:hover{
+	background-color: rgb(92 156 252);
+	color: white;
+}
+.center2{ 
+	position: relative;
+	width: 1270px;
+	height: 600px;
+	margin: 0 auto;
+}
+.centerleft{
+	position: relative;
+	float: left;
+	margin-left: 50px;
+	width: 700px;
+	height: 485px;
+	background-color: #877777;
+}
+.centerleft>img{
+	width: 350px;
+	height: 485px;
+}
+.centerleft1{
+	float: right;
+	width: 350px;
+	height: 485px;
+	background-color: #ffffff;
+}
+.centerleftc1{
+	position: absolute;
+	top: 60px;
+	left: 390px;
+	font-size: 22px;
+	font-weight: 650;
+}
+.centerleftc2{
+	position: absolute;
+	top: 125px;
+	left: 390px;
+	font-size: 15px;
+	font-weight: 250;
+}
+.centerleftc3{
+	position: absolute;
+	top: 170px;
+	left: 390px;
+	font-size: 15px;
+	font-weight: 250;
+}
+.centerleftc4{
+	position: absolute;
+	top: 215px;
+	left: 390px;
+	font-size: 15px;
+	font-weight: 250;
+}
+.centerleftc5{
+	position: absolute;
+	top: 260px;
+	left: 390px;
+	width: 286px;
+	line-height: 25px;
+	font-size: 15px;
+	font-weight: 250;
+}
+.centerleftcd{
+	position: absolute;
+	top: 385px;
+	left: 390px;
+	background-color: rgb(92 156 252);
+	width: 140px;
+	height: 40px;
+}
+.centerleftcd>span{
+	position: absolute;
+	color: white;
+	top: 8px;
+	left: 37px;
+	font-weight: 400;
+}
+.centerright{
+	position: relative;
+	float: left;
+	margin-left: 40px;
+	width: 420px;
+	height: 485px;
+}
+
+.centerup{
+	position: relative;
+	float: left;
+	width: 420px;
+	height: 225px;
+	background-color: #877777;
+}
+.centerup>img{
+	width: 170px;
+	height: 225px;
+}
+.centerup1{
+	float: right;
+	width: 250px;
+	height: 225px;
+	background-color: #ffffff;
+}
+.centerupc1{
+	position: absolute;
+	top: 30px;
+	left: 250px;
+	font-size: 20px;
+	font-weight: 650;
+}
+.centerupc2{
+	position: absolute;
+	top: 80px;
+	left: 185px;
+	width: 225px;
+	line-height: 25px;
+	font-size: 14px;
+	font-weight: 250;
+}
+.centerupcd{
+	position: absolute;
+	top: 155px;
+	left: 225px;
+	background-color: rgb(92 156 252);
+	width: 140px;
+	height: 40px;
+}
+.centerupcd>span{
+	position: absolute;
+	color: white;
+	top: 8px;
+	left: 37px;
+	font-weight: 400;
+}
+.centerdown{
+	position: relative;
+	float: left;
+	margin-top: 36px;
+	width: 420px;
+	height: 225px;
+	background-color: #877777;
+}
+.centerdown>img{
+	width: 170px;
+	height: 225px;
+}
+.centerdown1{
+	float: right;
+	width: 250px;
+	height: 225px;
+	background-color: #ffffff;
+}
+.centerdownc1{
+	position: absolute;
+	top: 30px;
+	left: 260px;
+	font-size: 20px;
+	font-weight: 650;
+}
+.centerdownc2{
+	position: absolute;
+	top: 80px;
+	left: 185px;
+	width: 225px;
+	line-height: 25px;
+	font-size: 14px;
+	font-weight: 250;
+}
+.centerdowncd{
+	position: absolute;
+	top: 155px;
+	left: 225px;
+	background-color: rgb(92 156 252);
+	width: 140px;
+	height: 40px;
+}
+.centerdowncd>span{
+	position: absolute;
+	color: white;
+	top: 8px;
+	left: 37px;
+	font-weight: 400;
+}

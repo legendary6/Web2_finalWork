@@ -1,0 +1,68 @@
+/* 爱好者专区 */
+
+.lover{
+	height: 500px;
+	width: 1535px;
+	margin: 0 auto;
+	background-color: rgba(186, 203, 204, 0.39);
+}
+#lover-body{
+	height: 400px;
+	width: 1300px;
+	margin: 0 auto;
+	position: relative;
+	top: 50px;
+}
+#lover-body #lover-right{
+	position: absolute;
+	right: 0px;
+	height: 400px;
+	width: 560px;
+}
+#lover-body #lover-left img{
+	position: absolute;
+	width: 740px;
+	height: 400px;
+}
+#lover-body #lover-right .gg{
+	margin-left: 60px;
+    margin-top: 20px;
+    border-bottom: 1px #e0e2e2 solid;
+    width: 446px;
+    height: 35px;
+}
+.gg li{
+	float: left;
+	height: 35px;
+    margin-left: 45px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.liselect{
+    font-size: 18px;
+	color: #1da6ba;
+	font-weight: 700;
+    border-bottom: 2px #1da6ba solid;
+}
+.xian1{
+	position: absolute;
+	top: 90px;
+	left: 100px;
+	width: 300px;
+	height: 300px;
+	display: none;
+	font-size: 13px;
+}
+.xian1 li{
+	margin-top: 26px;
+	width: 400px;
+	padding-bottom: 13px;
+	border-bottom: 1px dashed rgb(77, 74, 74);
+}
+.xian1 li a{
+	color: rgb(91, 93, 94);
+}
+.xian1 li a:hover {
+	color: rgb(38, 162, 168);
+    text-decoration: underline;
+}

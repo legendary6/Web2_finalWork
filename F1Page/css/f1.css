@@ -1,0 +1,626 @@
+#header .nav {
+	padding: 10px;
+	background-color: black;
+	width: 100%;
+	height: 30px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 100;
+	opacity: 0.8;
+
+}
+
+#header .nav .container {
+	width: 1200px;
+	height: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+#header .nav .container .left {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	font-size: 28px;
+	color: #fff;
+	font-weight: 900;
+}
+
+#header .nav .container .right {
+	float: right;
+	margin-right: -15px;
+	height: 30px;
+}
+
+#header .nav .container .right>li {
+	float: left;
+	margin: 0px 15px 0px 15px;
+	display: block;
+	font-size: 17px;
+	padding: 5px 15px;
+}
+
+#header .nav .container .right>li a {
+	color: white;
+}
+
+#header .text-center {
+	text-align: center;
+}
+
+#header #selected {
+	color: #fcac45;
+}
+
+#home {
+	/* width: 1903px; */
+	height: 800px;
+	position: relative;
+	/* background: url(../image/f1-bg.jpg); */
+	/*拓展属性：把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。*/
+	/* background-size: cover; */
+	/*拓展属性：性设置背景图像的起始位置为中间配合background-attachment属性解决兼容问题*/
+	/* background-position: center; */
+	/* background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #cfcfcf; */
+}
+
+#home #box {
+	height: 800px;
+	width: 1903px;
+	position: relative;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+#home #slider {
+	position: absolute;
+	left: -1903px;
+	width: 13321px;
+}
+
+#home .slide {
+	width: 1903px;
+	overflow: hidden;
+	float: left;
+}
+
+#home .display-none {
+	display: none;
+}
+
+#home .box span {
+	display: block;
+	width: 30px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	top: 400px;
+	line-height: 45px;
+	background: #0b101e;
+	font-size: 30px;
+	position: absolute;
+	opacity: 0;
+}
+
+#home #left {
+	left: 30px;
+}
+
+#home #right {
+	right: 30px;
+}
+
+#home .nav-lbt {
+	position: absolute;
+	width: 200px;
+	margin-left: 851.5px;
+	bottom: 20px;
+}
+
+#home li {
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	cursor: pointer;
+	margin: 0 10px;
+	border-radius: 50%;
+	list-style: none;
+	text-align: center;
+}
+
+#home .nav-lbt .active {
+	background: red;
+}
+
+#news1 {
+	height: 400px;
+	width: 100%;
+	/* background-image: url(../image/f1-js-bg.jpg); */
+	/* background-repeat: no-repeat; */
+	/* padding-bottom: 80px; */
+}
+
+#news1 .container {
+	width: 1200px;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+#news1 .container .left {
+	float: left;
+	line-height: 400px;
+	width: 1px;
+}
+
+#news1 .container .left img {
+	position: relative;
+	left: -100px;
+	transform: scale(0.5);
+}
+
+#news1 .container .right {
+	float: right;
+	height: 400px;
+	width: 700px;
+}
+
+#news1 .container .right .content {
+	margin-top: 100px;
+	margin-left: 50px;
+	font-family: "宋体";
+	/* 字体什么样式我也不知道 */
+}
+
+#news1 .container h1 {
+	position: relative;
+	left: 10px;
+	font-size: 60px;
+	font-weight: bolder;
+}
+
+#news1 #dividing-line {
+	width: 650px;
+	height: auto;
+}
+
+#news1 p {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.bg-center {
+	width: 100%;
+}
+
+.bg-center .black-bg {
+	width: 1903px;
+	height: 310px;
+	background-image: url(../image/f1-js-bg.jpg);
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+
+/* 主要内容 */
+.main-center-bg{
+	width:1903px;
+	background-image: url(../image/f1-bg-content.png); 
+	background-repeat: no-repeat; margin: 0 auto;
+}
+
+.main-center {
+	width: 1250px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+.main-center .left {
+	margin-top: 30px;
+	height:600px;
+	width: 900px;
+	float: left;
+	display: block;
+}
+
+.main-center .left .left-header{
+	height:40px;
+}
+.main-center .left .left-header .place{
+	width:auto;
+	float: left;
+	font-size:20px;
+	font-weight: bold;
+	color: #333;
+	line-height:45px;
+	cursor: pointer;
+}
+.main-center .left .left-header .place-watch{
+	color:#e00000;
+}
+.main-center .left .left-header img{
+	float: left;
+	margin-top: 10px;
+}
+
+.main-center .left .place-content{
+	display: none;
+}
+
+.main-center .left .place-content li{
+	list-style-image: url(../image/f1-icon-1.png);
+}
+
+.main-center .left-content{
+	height: 500px;
+	width:365px;
+	position: relative;
+	top:40px;
+}
+.main-center .left-content .tit{
+	font-style: italic;
+    color: #252525;
+    font-size: 18px;
+    text-indent: 25px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.main-center .left-content .cj{
+	margin-top: 20px;
+	height: 50px;
+}
+.main-center .left-content .cj span{
+	text-align: center;
+    display: block;
+    float: left;
+    width: 120px;
+}
+.main-center .left-content .cj .p2{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #252525;
+}
+.main-center .left-content .zj p{
+	text-align: center;
+}
+.main-center .left-content .zj .p1{
+	font-size: 16px;
+    line-height: 16px;
+	color: #666;
+	margin-top: 30px;
+	background-image: url(../image/f1-bg-dqcj.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.main-center .left-content .zj .p2{
+	margin-top: 10px;
+    font-weight: 700;
+    font-size: 16px;
+	color: #252525;
+}
+.main-center .left-content .zj img{
+	margin-top:50px;
+}
+
+.main-center .right-content{
+	float: right;
+	position: relative;
+	top:-430px;
+}
+.main-center .right-content .game-video-img{
+	height: 276px;
+	width:490px;
+	overflow: hidden;
+	transition: all 1.0s;
+}
+.main-center .right-content img{
+	height: 276px;
+	width:490px;
+	overflow: hidden;
+	transition: transform 1.0s;
+}
+.main-center .right-content .title-slide{
+	background-color: rgb(0, 0, 0,0.6);
+	position: relative;
+	top: -48px;
+}
+.main-center .right-content .game-title{
+	height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+	/* text-indent: 55px; */
+	text-align: center;
+}
+
+.main-center .right-content .countdown{
+	width:490px;
+	height: 150px;
+}
+.main-center .right-content .countdown p{
+	margin-top:50px;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(180, 40, 40);
+    text-align: center;
+    width: 100%
+}
+.main-center .right-content .countdown .countdown-time{
+	background-image: url(../image/countdown-bg.png);
+	background-repeat: no-repeat ;
+	transform: scale(1.8);
+	height: 100%;
+	position: relative;
+	top: 70px;
+	margin-left: 175px;
+}
+.main-center .right-content .countdown span{
+	line-height: 50px;
+}
+.main-center .right-content .countdown .unit{
+	font-size: 10px;
+	font-weight: 700;
+	color:white;
+    font-style: italic;
+}
+.main-center .right-content .countdown .count-day{
+	font-weight: 700;
+	font-style: italic;
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+	margin-left: 1px;
+}
+
+.main-center .right-content .countdown .count-hour{
+	font-weight: 700;
+	font-style: italic;
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+}
+.main-center .right-content .countdown .count-minute{
+	font-weight: 700;
+	font-style: italic;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+}
+.main-center .right-content .countdown .count-second{
+	font-weight: 700;
+	font-style: italic;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* 榜单 */
+.main-center .right {
+	margin-top: 30px;
+	width: 327px;
+	float: right;
+	display: block;
+}
+.main-center .right .more{
+	float:right;
+}
+.main-center .right .choice-left{
+	float: left;
+}
+.main-center .right .choice{
+	float: left;
+	font-size:20px;
+	line-height:30px;
+	font-weight: bolder;
+}
+.main-center .right #choice1{
+	color:red;
+	cursor: pointer;
+	list-style-image: url(../image/f1-icon-1.png);
+}
+.main-center .right #choice2{
+	color:black;
+	cursor: pointer;
+}
+.main-center .more a{
+	color:grey;
+	line-height:40px;
+	font-size: 18px;
+}
+.main-center .tab-main {
+	border-top: 2px solid #f00;
+}
+.main-center .tab_bd_item span{
+	display: block;
+	text-align: center;
+	float: left;
+	font-size: 14px;
+	color:#555;
+	font-weight: bolder;
+}
+.main-center .tab_bd_item .list1{
+	border:1px solid #e8e8e8;
+}
+.main-center .tab_bd_item .list1 li{
+	height: 25px;
+	line-height:25px;
+}
+.main-center .tab_bd_item .list1 .mc {
+	width:70px;
+	height: 25px;
+}
+.main-center .tab_bd_item .list1 .name {
+	width:100px;
+	height: 25px;
+}
+.main-center .tab_bd_item .list1 .dui {
+	width:100px;
+	height: 25px;
+}
+.main-center .tab_bd_item .list1 .jf {
+	width:55px;
+	height: 25px;
+}
+.main-center .tab_bd_item .list2{
+	border:1px solid #e8e8e8;
+}
+.main-center .tab_bd_item .list2 li{
+	height: 50px;
+	line-height:50px;
+}
+.main-center .tab_bd_item .list2 .mc {
+	width:90px;
+	height: 50px;
+	line-height:50px;
+}
+.main-center .tab_bd_item .list2 .dui {
+	width:150px;
+	height: 50px;
+	line-height:50px;
+}
+.main-center .tab_bd_item .list2 .jf {
+	width:85px;
+	height: 50px;
+	line-height:50px;
+}
+
+
+
+/* 视频模块的css样式 */
+.video {
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+}
+
+.video .video-center {
+	width: 1903px;
+	height: atuo;
+	margin: 0 auto;
+}
+
+.video .content {
+	width: 1200px;
+	height: auto;
+	margin: 0px auto;
+	padding: 0 15px;
+	border-top:1px solid #444;
+
+}
+
+.video .head {
+	height: 50px;
+	width: 1200px;
+	margin-top: 30px;
+}
+
+.video .left {
+	float: left;
+}
+
+.video .right {
+	float: right;
+}
+
+.video img {
+	position: relative;
+	/* top: 2px; */
+}
+.video .head .left img{
+	top:4px;
+}
+
+.video .left span {
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: bolder;
+	color: #240055;
+}
+
+.video .right {
+	border: 2px solid #d3d3d3;
+	padding: 7px 13px;
+	border-radius: 30px;
+}
+
+.video .right span {
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: bolder;
+	color: #d3d3d3;
+}
+
+.video .video-box {
+	position: relative;
+	top: 30px;
+	width: 1200px;
+	height: auto;
+	display: block;
+}
+
+.video .video-img {
+	height: 280px;
+	width: 320px;
+	float: left;
+	margin-right: 120px;
+	background-color: #f8f8f8;
+	position: relative;
+}
+
+.video #video-img-last {
+	margin-right: 0px;
+}
+
+.video .video-img .video-img-hidden{
+	height: 200px;
+	width: 320px;
+	overflow: hidden;
+	transition: all 1.0s;
+
+}
+
+.video .video-img img {
+	height: 200px;
+	width: auto;
+	overflow: hidden;
+	/* css3的属性，设置过渡效果，这里设置时间 */
+	/* 本来只打算放大图片，后来发现，阴影也设置时间更好看，笑~ */
+	/* transition: transform 1.0s; */
+	transition: all 1.0s;
+}
+
+.video .video-img span {
+	display: block;
+	margin: 5px 15px 10px 15px;
+	color:#222;
+}
+
+.video .video-foot{
+	position:absolute;
+	bottom:5px;
+	width:320px;
+}
+.video .video-foot .foot-left{
+	float: left;
+	font-size: 14px;
+	position: relative;
+	left: 15px;
+	color:#99a2aa;
+}
+.video .video-foot .foot-right{
+	float: right;
+	font-size: 14px;
+	position: relative;
+	right:  15px;
+	color:#99a2aa;
+}

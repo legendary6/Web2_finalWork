@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>放大镜</title>
+    <style>
+		*{
+		    padding: 0;
+		    margin: 0;
+		}
+		ul,li,ol{
+		    list-style: none;
+		}
+		a{
+		    text-decoration: none;
+		    color: #000;
+		}
+		.clear:after{
+		    content:"";
+		    display: block;
+		    clear: both;
+		    height: 0;
+		}
+        #bigmain{
+            width:1000px;
+            height:700px;
+            margin:0px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #demo {
+            display: block;
+            width: 450px;
+            height: 450px;
+            position: relative;
+        }
+        #small-box {
+            width:450px;
+            height:450px;
+            position: relative;
+            z-index: 1;
+        }
+        #float-box {
+            display: none;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            background: #ccc;
+            border: 1px solid #ccc;
+            opacity: 0.5;
+        }
+        .bigbottom{
+            display: block;
+            position:absolute;
+            width:450px;
+            height:150px;
+            top:470px;
+        }
+        #shop11{
+            position: absolute;
+            top:15px;
+            left:42px;
+            display: block-inline;
+        }
+        #shop22{
+            position: absolute;
+            top:15px;
+            left:185px;
+            display: block-inline;
+        }
+        #shop33{
+            position: absolute;
+            top:15px;
+            right:42px;
+            display: block-inline;
+        }
+		.sp0{
+			position: absolute;
+    		top: 0px;
+    		left: 88px
+		}
+        #mark {
+            position: absolute;
+            display: block;
+            width: 450px;
+            height: 450px;
+            background-color: #fff;
+            opacity: 0;
+            z-index: 10;
+        }
+        #big-box {
+            display: none;
+            position: absolute;
+            top:10px;
+            left: 465px;
+            width: 545px;
+            height: 545px;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            z-index: 1;
+        }
+        #big-box img {
+            position: absolute;
+            z-index: 2;
+        }
+        .gouwuche{
+            position: absolute;
+            top:0px;
+            left:460px;
+            width:500px;
+            height:654px;
+            margin-left: 40px;
+            margin-top: 20px;
+            display: inline-block;
+            float: left;
+        }
+        .kurui{
+            width:500px;
+            height:100px;
+        }
+        .xie1{
+            font-weight:bold;
+            font-size:20px;
+        }
+        .xie2{
+            font-size:10px;
+            color: #ccc;
+            margin-top:10px;
+        }
+        .red1{
+            width: 500px;
+            height:25px;
+            background-color:#e01409;
+        }
+        .miaosha{
+            left:17px;
+            position: absolute;
+            color:white;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        #timer{
+            width:250px;
+            height: 25px;
+            right:0;
+            position: absolute;
+            color:white;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .huise{
+            background-color: #f9f9f9;
+            width: 500px;
+            height:125px;
+            position: relative;
+        }
+        .kongbai{
+            margin-top:10px;
+            height:30px;
+        }
+        .zengzhi{
+            color: #a5a7ae;
+        }
+        .aj{
+            width: 460px;
+            height: 460px;
+            margin: 20px;
+        }
+        .xuanzhong{
+            border: 2px solid #fe0d4a;
+            background: url(img/duigou.png) right bottom no-repeat;
+            width: 30px;
+            height:20px;
+            display: inline-block;
+            margin:7px;
+            font-size: 12px;
+            line-height: 30px;
+            text-align: center;
+            line-height:20px;
+        }
+        .size{
+            display: inline-block;
+            height: 20px;
+            width: 30px;
+            margin:8px;
+            font-size: 12px;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+            border:1px solid red;
+            line-height:20px;
+        }
+        .jian{
+            display: inline-block;
+            height:20px;
+            margin-left:20px;
+            color: red;
+            font-size: 18px;
+        }
+        .numchange{
+            margin-top:20px;
+        }
+        .change{
+            display: inline-block;
+            width: 27px;
+            height: 27px;
+            line-height: 27px;
+            font-size: 12px;
+            border: 1px solid #aca7a2;
+            text-align: center;
+        }
+        .num{
+            margin-left: -5px;
+            margin-right: -5px;
+            display: inline-block;
+            width: 52px;
+            height: 27px;
+            font-size: 12px;
+            border: 1px solid #aca7a2;
+            line-height: 27px;
+            text-align: center;
+        }
+        .shuliang{
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #navigation,#navigation li ul{
+            list-style-type: none;
+        }
+        #navigation li{
+            float: left;
+            text-align:center;
+            position:relative;
+        }  
+        #navigation li a{
+            display: block;
+            font-size: 10px;
+             width: 120px;
+            height: 40px;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+            line-height:40px;
+        }
+        #navigation li a:hover{
+            color: #fff;
+            background: #2687eb;
+        }
+        #navigation li ul{
+            float: none;    
+        }
+        #navigation li ul{
+            display: none;
+            position: absolute;      
+        }
+        #navigation li ul li a:link,#navigation li ul li a:visited{
+            display: block;
+            width: 160px;
+        }
+
+        .fukuan{
+            margin: 10px;
+            display:inline-block;
+            left:20px;
+        }
+        .kong{
+        	width: 100%;
+        	height: 50px;
+        }
+        .bread{
+        	width: 100%;
+        	height: 50px;
+        	border-bottom: 1px solid #dadada;
+        }
+        .bread .bomb{
+        	width: 1200px;
+        	height: 50px;
+        	margin:0 auto;
+        }
+        .bread .bomb p{
+        	position: relative;
+        	top: 28px;
+        	color: #535353;
+        	font-size: 16px;
+        	left: 15px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/daohang.css">
+    <link rel="stylesheet" type="text/css" href="css/foot.css">
+</head>
+<body>
+<!-- 导航栏 -->
+<div class="nav">
+	<div class="container">
+		<!--logo -->
+		<div class="left">FREE</div>
+		<!-- 右侧导航栏 -->
+		<ul class="right">
+			<li><a href="../../index.html" class="pos">Home</a></li>
+			<li><a href="../../skiingPage/index1.html" class="pos">滑雪</a></li>
+			<li><a href="../../wingedFlightPage/indexfx.html" class="pos">翼装飞行</a></li>
+			<li><a href="../../F1Page/f1.html" class="pos">F1赛车</a></li>
+			<li><a href="../../sportsShop/shop.html" class="pos" id="selected">运动商城</a></li>
+		</ul>
+	</div>
+</div>
+<div class="kong"></div>
+<div class="bread">	
+	<div class="bomb">	
+		<p>首页->商品详情->系列运动装备</p>
+	</div>
+</div>
+<!-- 主要内容 -->
+<div id = "bigmain">
+    <div id="demo">
+        <div id="small-box">
+            <div id="mark"></div>
+            <div id="float-box"></div>
+            <div>
+                <img src="img/shop-1.png"/ id="Bimg">
+            </div>
+            <div class="bigbottom">
+			    <img src="img/shop11.png" class="shop11" id ="shop11">
+			    <img src="img/shop22.png" class="shop11" id = "shop22">
+                <img src="img/shop33.png" class="shop11" id = "shop33">
+	       </div>
+        </div>
+    </div>
+        <div id="big-box">
+            <img src="img/shop1.png" id="bigImg">
+        </div>          
+    <div class="gouwuche">
+        <div class="kurui">
+            <p class="xie1">美国悍途高帮真皮登山鞋男冬季保暖加绒户外棉鞋防滑耐磨徒步鞋男</p>
+            <p class="xie2">此鞋偏小一码 加绒/不加绒可选 新年狂欢节</p>
+        </div>
+        <div>
+            <div class="red1">
+                <span class="miaosha">秒杀</span>
+                <div id="timer"></div>
+            </div> 
+            <div class ="huise">
+                <img src="img/miaoshajiage.png" id="hidden1"> 
+            </div>
+        </div>
+        <div class="aj">
+            <div class="kongbai">
+                <span class="zengzhi">增值业务&nbsp</span>
+                <span class="zengzhi">支持以旧换新</span>
+                <span class="zengzhi">高价回收</span>
+                <span class="zengzhi">有好礼相送欧！</span>
+            </div>
+            <span class="xiema">鞋码大小</span>
+            <span class="size">37</span>
+            <span class="size">38</span>
+            <span class="size">39</span>
+            <span class="size">40</span>
+            <span class="size">41</span>
+            <span class="size">42</span>
+            <span class="size">43</span>
+            <span class="size">44</span>
+            <span class="size">45</span>
+            <span class="size">46</span>
+            <span class="size">47</span>
+            <span class="size">48</span><br>
+            <span class="zengzhi">私人定制</span>
+        	<button class="add" style="background-color:#ccc;color:#f9f9f9;width:100px;height:35px; margin: 0px 20px;">选择颜色配置</button>
+            <button class="add" style="background-color:#ccc;color:#f9f9f9;width:100px;height:35px;">更多专属设置</button>
+            <div class="numchange">
+                <span class="shuliang">数量</span>
+                <div class="bigchange">
+                    <span style="cursor:not-allowed" class="change">-</span>
+                    <input type="text" class="num" value="1">
+                    <span style="cursor:pointer" class="change">+</span>
+                    <span class="jian">件（库存10件）</span><br>
+                </div>       
+            </div>
+            <button style="background-color:#e1140a;color:#ccc;width:100px;height:40px;margin: 10px 20px;">已售罄</button>
+            <button class="add" style="background-color:#e1140a;color:#fff;width:100px;height:40px;margin: 10px 20px">到货通知</button>
+            <ul id="navigation">
+            <div class="xila">
+                <span class="fukuan">付款方式</span>
+                <li onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><a href="#">花呗分期</a>
+                <ul>
+                    <li><a href="#">手续费: 约￥69.00/期</a></li>
+                    <li><a href="#">手续费: 约￥67.50/期</a></li>
+                </ul>
+                </li>
+                <li onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)">
+                    <a href="#">招商银行</a>
+                    <ul>
+                    <li><a href="#">手续费: 约￥69.00/期</a></li>
+                    <li><a href="#">手续费: 约￥67.50/期</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+       </div>
+   </div>
+	<!-- foot -->
+	<div class="foot" id="foot">
+		<div class="foot_center">
+			<ul id="first">
+				<li style="font-size: 18px;">关于我们</li>
+				<li><a href="#">团队介绍</a></li>
+				<li><a href="#">加入我们</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">联系白维扬</a></li>
+				<li><a href="#">团队分工合作</a></li>
+				<li><a href="#">团队成员关系</a></li>
+			</ul>
+			<ul>
+				<li style="font-size: 18px;">运动商城</li>
+				<li><a href="#">跳转商城</a></li>
+				<li><a href="#">今日秒杀</a></li>
+				<li><a href="#">装备推荐</a></li>
+				<li><a href="#">以旧换新</a></li>
+				<li><a href="#">积分商城</a></li>
+				<li><a href="#">私人订制</a></li>
+			</ul>
+			<ul>
+				<li style="font-size: 18px;">运动训练</li>
+				<li><a href="#">滑雪训练</a></li>
+				<li><a href="#">冲浪训练</a></li>
+				<li><a href="#">攀岩训练</a></li>
+				<li><a href="#">赛车训练</a></li>
+				<li><a href="#">跑酷训练</a></li>
+				<li><a href="#">训练方案</a></li>
+			</ul>
+			<ul id="_right">
+				<li style="font-size: 18px;">相关网站</li>
+				<li><a href="#">冰雪汇</a></li>
+				<li><a href="#">冰雪网</a></li>
+				<li><a href="#">冰雪运动</a></li>
+				<li><a href="#">冰雪网络</a></li>
+				<li><a href="#">中冰雪网</a></li>
+				<li><a href="#">鹰飞跳伞</a></li>
+			</ul>
+		<div class="right_part">
+			<span style="font-size: 18px;">FREE官方社交平台</span>
+			<div class="logo">
+				<img src="img/QQa.png" alt="qq" class="small" />
+				<img src="img/wxa.png" alt="wx" class="small" />
+				<img src="img/wba.png" alt="wb" class="small" />
+			</div>
+			<div class="erweima">
+				<img src="img/wxewm.jpg" id="big" />
+			</div>
+		</div>
+		<div class="bottom">
+				© 2019-2022  FREE网站(206宿舍)版权所有，并保留所有权利。ICP备案证书号：冀ICP备17127392号 
+		</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src = "js/foot.js">
+</script>
+<script>
+    //页面加载完毕后执行
+    window.onload = function () {
+    var objmain = document.getElementById("bigmain");
+    var objSmallBox = document.getElementById("small-box");
+    var objMark = document.getElementById("mark");
+    var objFloatBox = document.getElementById("float-box");
+    var objBigBox = document.getElementById("big-box");
+    var objBigBoxImage = objBigBox.getElementsByTagName("img")[0];
+    var huise = document.getElementsByClassName("huise")[0];
+    var hidden1 =document.getElementById("hidden1");
+    huise.onmouseover = function(){
+        hidden1.src = "img/hidden-1.png";
+    }
+    huise.onmouseout = function(){
+        hidden1.src = "img/miaoshajiage.png";
+    }
+    objMark.onmouseover = function () {
+        objFloatBox.style.display = "block";
+        objBigBox.style.display = "block";
+    }
+
+    objMark.onmouseout = function () {
+        objFloatBox.style.display = "none";
+        objBigBox.style.display = "none";
+    }
+
+    objMark.onmousemove = function (ev) {
+        var _event = ev || window.event;  //兼容多个浏览器的event参数模式
+        var left = _event.clientX - objmain.offsetLeft - objSmallBox.offsetLeft - objFloatBox.offsetWidth / 2;
+        var top = _event.clientY - objmain.offsetTop - objSmallBox.offsetTop - objFloatBox.offsetHeight / 2;
+
+        //设置边界处理，防止移出小图片
+        if (left < 0) {
+            left = 0;
+        } else if (left > (objMark.offsetWidth - objFloatBox.offsetWidth)) {
+            left = objMark.offsetWidth - objFloatBox.offsetWidth;
+        }
+
+        if (top < 0) {
+            top = 0;
+        } else if (top > (objMark.offsetHeight - objFloatBox.offsetHeight)) {
+            top = objMark.offsetHeight - objFloatBox.offsetHeight;
+
+        }
+
+        objFloatBox.style.left = left + "px";   //oSmall.offsetLeft的值是相对什么而言
+        objFloatBox.style.top = top + "px";
+        
+        //求其比值
+        var percentX = left / (objMark.offsetWidth - objFloatBox.offsetWidth);
+        var percentY = top / (objMark.offsetHeight - objFloatBox.offsetHeight);
+        
+        //方向相反，小图片鼠标移动方向与大图片相反，故而是负值
+        objBigBoxImage.style.left = -percentX * (objBigBoxImage.offsetWidth - objBigBox.offsetWidth) + "px";
+        objBigBoxImage.style.top = -percentY * (objBigBoxImage.offsetHeight - objBigBox.offsetHeight) + "px";
+    	}
+
+        var bigImg = document.getElementById("bigImg");
+        var Bimg =document.getElementById("Bimg");
+        var shop11 = document.getElementsByClassName("shop11")[0];
+        var shop22 = document.getElementsByClassName("shop11")[1];
+        var shop33 = document.getElementsByClassName("shop11")[2];
+        shop11.onmouseover = function(){
+            shop11.setAttribute("style","border: 3px solid #ff9003");
+            shop22.setAttribute("style","border: 3px solid #fff");
+            shop33.setAttribute("style","border: 3px solid #fff");
+            bigImg.src="img/shop1.png";
+            Bimg.src="img/shop-1.png";
+        }
+        shop22.onmouseover = function(){
+            shop22.setAttribute("style","border: 3px solid #ff9003");
+            shop11.setAttribute("style","border: 3px solid #fff");
+            shop33.setAttribute("style","border: 3px solid #fff");
+            bigImg.src="img/shop2.png";
+            Bimg.src="img/shop-2.png";
+        }
+        shop33.onmouseover = function(){
+            shop33.setAttribute("style","border: 3px solid #ff9003");
+            shop11.setAttribute("style","border: 3px solid #fff");
+            shop22.setAttribute("style","border: 3px solid #fff");
+            bigImg.src="img/shop3.png";
+            Bimg.src="img/shop-3.png";
+        }
+        shop11.onmouseout = function(){
+            shop11.setAttribute("style","border: 3px solid #fff");
+        }
+        shop22.onmouseout = function(){               
+            shop22.setAttribute("style","border: 3px solid #fff");
+        }
+        shop33.onmouseout = function(){
+            shop33.setAttribute("style","border: 3px solid #fff");
+        }
+        var size0 = document.getElementsByClassName("size")[0];
+        var size1 = document.getElementsByClassName("size")[1];
+        var size2 = document.getElementsByClassName("size")[2];
+        var size3 = document.getElementsByClassName("size")[3];
+        var size4 = document.getElementsByClassName("size")[4];
+        var size5 = document.getElementsByClassName("size")[5];
+        var size6 = document.getElementsByClassName("size")[6];
+        var size7 = document.getElementsByClassName("size")[7];
+        var size8 = document.getElementsByClassName("size")[8];
+        var size9 = document.getElementsByClassName("size")[9];
+        var size10 = document.getElementsByClassName("size")[10];
+        var size11 = document.getElementsByClassName("size")[11];
+        
+        function fresh(){
+            size0.className = "size";
+            size1.className = "size";
+            size2.className = "size";
+            size3.className = "size";
+            size4.className = "size";
+            size5.className = "size";
+            size6.className = "size";
+            size7.className = "size";
+            size8.className = "size";
+            size9.className = "size";
+            size10.className = "size";
+            size11.className = "size";
+        }
+        size0.onclick= function (){
+            fresh();
+            size0.className = "xuanzhong";
+        }
+        size1.onclick= function (){
+            fresh();
+            size1.className = "xuanzhong";
+        }
+        size2.onclick= function (){
+            fresh();
+            size2.className = "xuanzhong";
+        }
+        size3.onclick= function (){
+            fresh();
+            size3.className = "xuanzhong";
+        }
+        size4.onclick= function (){
+            fresh();
+            size4.className = "xuanzhong";
+        }
+        size5.onclick= function (){
+            fresh();
+            size5.className = "xuanzhong";
+        }
+        size6.onclick= function (){
+            size6.className = "xuanzhong";
+        }
+        size7.onclick= function (){
+            fresh();
+            size7.className = "xuanzhong";
+        }
+        size8.onclick= function (){
+            fresh();
+            size8.className = "xuanzhong";
+        }
+        size9.onclick= function (){
+            fresh();
+            size9.className = "xuanzhong";
+        }
+        size10.onclick= function (){
+            fresh();
+            size10.className = "xuanzhong";
+        }
+        size11.onclick= function (){
+            fresh();
+            size11.className = "xuanzhong";
+        }
+        var reduce = document.getElementsByClassName("change")[0];
+        var add = document.getElementsByClassName("change")[1];
+        var num = document.getElementsByClassName("num")[0];
+        var num1 = parseInt(num.value);
+        add.onclick = function(){
+            var num1 = parseInt(num.value);
+            if(num1>0 && num1<10){
+                num.value = num1 + 1;
+            }
+            if(num1 == 0){
+                reduce.setAttribute("style","cursor:not-allowed");
+                add.setAttribute("style","cursor:pointer");
+            }else if(num1 == 10){
+                add.setAttribute("style","cursor:not-allowed");
+                reduce.setAttribute("style","cursor:pointer");
+            }else{
+                add.setAttribute("style","cursor:pointer");
+                reduce.setAttribute("style","cursor:pointer");
+            }
+        }
+        reduce.onclick = function(){
+            var num1 = parseInt(num.value);
+            if(num1>1 && num1<11){
+                num.value = num1 - 1;
+            }
+            if(num1 == 1){
+                reduce.setAttribute("style","cursor:not-allowed");
+                add.setAttribute("style","cursor:pointer");
+            }else{
+                add.setAttribute("style","cursor:pointer");
+                reduce.setAttribute("style","cursor:pointer");
+            }
+        }
+    }
+    function TimeDown(id, endDateStr) {
+        //结束时间
+        var endDate = new Date(endDateStr);
+        //当前时间
+        var nowDate = new Date();
+        //相差的总秒数
+        var totalSeconds = parseInt((endDate - nowDate) / 1000);
+        //天数
+        var days = Math.floor(totalSeconds / (60 * 60 * 24));
+        //取模（余数）
+        var modulo = totalSeconds % (60 * 60 * 24);
+        //小时数
+        var hours = Math.floor(modulo / (60 * 60));
+        modulo = modulo % (60 * 60);
+        //分钟
+        var minutes = Math.floor(modulo / 60);
+        //秒
+        var seconds = modulo % 60;
+        //输出到页面
+        document.getElementById(id).innerHTML = "还剩:" + days + "天" + hours + "小时" + minutes + "分钟" + seconds + "秒";
+        //延迟一秒执行自己
+        setTimeout(function () {
+            TimeDown(id, endDateStr);
+        }, 1000)
+    }
+
+    //下拉菜单
+    function showSubMenu(li){
+        var subMenu = li.getElementsByTagName("ul")[0];
+        subMenu.style.display = "block";
+    }
+
+    //隐藏子菜单
+    function hideSubMenu(li){
+        var subMenu = li.getElementsByTagName("ul")[0];
+        subMenu.style.display = "none";
+    }
+	TimeDown("timer", "2019-12-31 8:00:45");
+</script>
+</html>
