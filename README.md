@@ -2,7 +2,7 @@
 
 
 
-Free  极限运动爱好者网站
-206宿舍所有  2班六组
+Free  极限运动爱好者网站   网页链接地址：https://legendary6.github.io/Web2_finalWork/index.html
+2018级软件2班六组   206宿舍所有 
 
 
