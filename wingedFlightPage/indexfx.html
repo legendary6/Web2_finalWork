@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>极限运动分页</title>
+	<style type="text/css">
+		*{
+		    padding: 0;
+		    margin: 0;
+		}
+		ul,li,ol{
+		    list-style: none;
+		}
+		a{
+		    text-decoration: none;
+		    color: black;
+		}
+		.clear:after{
+		    content:"";
+		    display: block;
+		    clear: both;
+		    height: 0;
+		}
+		.home{
+			position: relative;
+			margin-top: 0px;
+			width: 100%;
+			height: 750px;
+		}
+		.word{
+			position: absolute;
+			top: 330px;
+			left: 500px;
+			color: white;
+			z-index: 100;
+			opacity: 0.8;
+		}
+		.word1{
+			font-size: 60px;
+			font-weight: 300;
+		}
+		.word2{
+			font-style: italic;
+			font-size: 70px;
+			font-weight: 600;
+		}
+		.word3{
+			position: absolute;
+			top: 440px;
+			left: 500px;
+			color: white;
+			font-size: 20px;
+			font-weight: 300;
+			opacity: 0.8;
+			z-index: 100;
+		}
+		.box{
+		    width: 1535px;
+		    height: 750px;
+		    margin: 0 auto;
+		    position: relative;
+		    overflow: hidden;
+		}
+		.slider{
+			width: 9210px;
+			height: 750px;
+			position: absolute;
+		    left: 0px;
+		}
+		.slide{
+		    width: 1535px;
+		    overflow: hidden;
+		    float: left;
+		}
+		.slide>img{
+			width: 1535px;
+			height: 900px;
+		}
+
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/daohang.css">
+	<link rel="stylesheet" type="text/css" href="css/rightdown.css">
+	<link rel="stylesheet" type="text/css" href="css/center.css">
+	<link rel="stylesheet" type="text/css" href="css/photowall.css">
+	<link rel="stylesheet" type="text/css" href="css/foot.css">
+	<link rel="stylesheet" type="text/css" href="css/爱好.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div class="nav">
+		<div class="container">
+			<!--logo -->
+			<div class="left">FREE</div>
+			<!-- 右侧导航栏 -->
+			<ul class="right">
+				<li><a href="#" >Home</a></li>
+				<li><a href="#home">滑雪</a></li>
+				<li><a href="#" id="selected">翼装飞行</a></li>
+				<li><a href="#">F1赛车</a></li>
+				<li><a href="#">运动商城</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 右下图标 -->
+	<div>
+		<ul class="a">
+			<li class="one">
+				<div class="one1">
+					<img src="images/11.22箭头.png">
+				</div>
+			</li>
+			<li class="two">
+				<div class="two1">
+					<img src="images/9.png">
+					<span>763550105</span>
+				</div>
+			</li>
+			<li class="three">
+				<div class="three1">
+					<img src="images/2.png">
+					<span>19832105929</span>
+				</div>
+			</li>
+			<div class="f">
+				<li class="four">
+					<div class="four1">
+						<img src="images/erweima.png">
+					</div>
+				</li>
+				<div class="wx">
+					<img src="images/wx.jpg">
+				</div>
+			</div>
+		</ul>		
+	</div>
+
+	<!-- 轮播图-->
+	<div class="home" >
+		<div class="word">
+			<span class="word1">越&nbsp</span><span class="word2">勇&nbsp敢&nbsp</span>
+			 <span class="word1">&nbsp越&nbsp</span><span class="word2">快&nbsp乐</span>
+		</div>
+		<div class="word3">翱&nbsp&nbsp&nbsp翔&nbsp&nbsp&nbsp蔚&nbsp&nbsp&nbsp蓝&nbsp&nbsp&nbsp天&nbsp&nbsp&nbsp际&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp突&nbsp&nbsp&nbsp破&nbsp&nbsp&nbsp人&nbsp&nbsp&nbsp类&nbsp&nbsp&nbsp&nbsp极&nbsp&nbsp&nbsp限</div>
+		<div class="box">
+	        <div class="slider" id="slider">
+	            <div class="slide"><img src="images/8808522.jpg"></div>
+	            <div class="slide"><img src="images/8808514.jpg"></div>
+	            <div class="slide"><img src="images/8808518.jpg"></div>
+	            <div class="slide"><img src="images/8808520.jpg"></div>
+	            <div class="slide"><img src="images/8808522.jpg"></div>
+	            <div class="slide"><img src="images/8808514.jpg"></div>
+        	</div>
+   		</div>
+	</div>
+
+	<!-- 中间简介图片叭 -->
+	<div class="center">
+		<div class="center1">
+			<div>
+				<span class="cs1">NZONE TANDEM SKYDIVE</span>
+				<span class="cs2">双人高空跳伞</span>
+				<span class="cs3">高空跳伞是至今为止最快速、最安全实现高空跳伞愿望的方式！拥有数千次双人跳伞经验的专业人士，和你利用背带系统固定在一起，从4000米高空跃出机舱，感受时速200公里每小时自由落体的刺激，享受开伞后内心的平静，换个角度俯瞰这个世界，最后再缓缓降落到地面。</span>
+				<div class="cd1">
+					<span>查看详情</span>
+				</div>
+				<div class="cd2">
+					<span>专属顾问</span>
+				</div>
+			</div>
+			<img src="images/8524000.png">
+		</div>
+		<div class="center2">
+			<div class="centerleft">
+				<img src="images/8959558.jpg">
+				<div class="centerleft1">
+					<span class="centerleftc1">双人高空跳伞</span>
+					<span class="centerleftc2">4000米高空</span>
+					<span class="centerleftc3">50-55秒自由落体</span>
+					<span class="centerleftc4">自由落地时速200公里/小时</span>
+					<span class="centerleftc5">包含：跳伞前培训、身体检查、团队合作、跳伞飞机乘坐、跳伞装备使用（伞具，护目镜，跳伞服等）、买保险。</span>
+					<div class="centerleftcd">
+						<span>查看详情</span>
+					</div>
+				</div>
+			</div>
+			<div class="centerright">
+				<div class="centerup">
+					<img src="images/yi.jpg">
+					<div class="centerup1">
+						<span class="centerupc1">翼装飞行</span>
+						<span class="centerupc2">分为有动力翼装飞行和无动力翼装飞行，需跳伞时长达到200小时</span>
+						<div class="centerupcd">
+							<span>查看详情</span>
+						</div>
+					</div>
+				</div>
+				<div class="centerdown">
+					<img src="images/hua1.jpg">
+					<div class="centerdown1">
+						<span class="centerdownc1">滑翔伞</span>
+						<span class="centerdownc2">滑翔伞通常主要由翼型伞衣、伞绳、背带系统和操纵系统四大部分组成。</span>
+						<div class="centerdowncd">
+							<span>查看详情</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 照片墙 -->
+	<div class="photowall">
+		<div class="name">
+			<span class="name1">PHOTO WALL</span>
+			<span class="name2">照片墙</span>
+		</div>
+		<div class="photo">
+			<div class="p1">
+				<div class="photo1"><img src="images/zhao11.jpg"></div>
+				<div class="photo2"><img src="images/zhao2.jpg"></div>
+				<div class="photo3"><img src="images/zhao3.jpg"></div>
+				<div class="photo4"><img src="images/8545259.jpg"></div>
+				<div class="photo5"><img src="images/zhao6.jfif"></div>
+			</div>
+			<div class="p2">
+				<div class="photo6"><img src="images/8561852.png"></div>
+				<div class="photo7"><img src="images/8561170.png"></div>
+				<div class="photo8"><img src="images/zhao8.jfif"></div>
+				<div class="photo9"><img src="images/zhao9.jfif"></div>
+				<div class="photo10"><img src="images/8551074.jpg"></div>
+			</div>
+		</div>
+	</div>
+
+    <!-- 爱好者专区 -->
+    <div id="lover" class="lover">
+        <div id="lover-body">
+            <!-- 左侧图片 -->
+            <div id="lover-left">
+                <img src="images/timgNIU8LOBW.jpg">
+            </div>
+            <!-- 右侧公告 -->
+            <div id="lover-right">
+                <ul class="gg">
+                    <li class="liselect" id="liselect">公告</li>
+                    <li>赛事</li>
+                    <li>活动</li>
+                    <li>社区</li>
+                    <li>线下</li>
+                </ul>
+                <!-- 公告 -->
+                <ul class="xian1" id="id1">
+                    <li><a href="#">近日将会有网站维护，注意时间</a></li>
+                    <li><a href="#">网站维护公告</a></li>
+                    <li><a href="#">关于前些日网站崩溃说明</a></li>
+                    <li><a href="#">如有任何涉及版权问题，请与我方联系</a></li>
+                    <li><a href="#">网站暂时注册无法登录说明</a></li>
+                </ul>
+                <!-- 赛事 -->
+                <ul class="xian1" id="id2">
+                    <li><a href="#">2020.3.5张家口天门山翼装飞行比赛开始</a></li>
+                    <li><a href="#">中国区赛事报名</a></li>
+                    <li><a href="#">2020.1.19厦门节海上滑翔伞比赛开始-横渡金门</a></li>
+                    <li><a href="#">2019.1.1喜马拉雅山高空双人跳伞活动</a></li>
+                    <li><a href="#">2019 国际翼装飞行中国巡回赛赛程</a></li>
+                </ul>
+                <!-- 活动 -->
+                <ul class="xian1" id="id3">
+                    <li><a href="#">飞行知识竞赛</a></li>
+                    <li><a href="#">翼装飞行爱好者聚会石家庄站</a></li>
+                    <li><a href="#">高空跳伞身体检查</a></li>
+                    <li><a href="#">双人滑翔伞体验</a></li>
+                    <li><a href="#">鹰飞之旅——王亚奇经验分享</a></li>
+                </ul>
+                <!-- 社区 -->
+                <ul class="xian1" id="id4">
+                    <li><a href="#">白维扬首飞那些事</a></li>
+                    <li><a href="#">河北师范大学飞行社建立</a></li>
+                    <li><a href="#">退役飞行员的故事</a></li>
+                    <li><a href="#">滑翔伞之想飞你就来</a></li>
+                    <li><a href="#">不来就不来</a></li>
+                </ul>
+                <!-- 线下 -->
+                <ul class="xian1" id="id5">
+                    <li><a href="#">翼装飞行爱好者聚会拉萨站</a></li>
+                    <li><a href="#">翼装飞行爱好者聚会香港站</a></li>
+                    <li><a href="#">翼装飞行爱好者聚会厦门站</a></li>
+                    <li><a href="#">翼装飞行爱好者聚会西安站</a></li>
+                    <li><a href="#">翼装飞行爱好者聚会南京站</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	<!-- foot -->
+	<div class="foot" id="foot">
+		<div class="foot_center">
+			<ul id="first">
+				<li style="font-size: 18px;">关于我们</li>
+				<li><a href="#">团队介绍</a></li>
+				<li><a href="#">加入我们</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">联系白维扬</a></li>
+				<li><a href="#">团队分工合作</a></li>
+				<li><a href="#">团队成员关系</a></li>
+			</ul>
+			<ul>
+				<li style="font-size: 18px;">运动商城</li>
+				<li><a href="#">跳转商城</a></li>
+				<li><a href="#">今日秒杀</a></li>
+				<li><a href="#">装备推荐</a></li>
+				<li><a href="#">以旧换新</a></li>
+				<li><a href="#">积分商城</a></li>
+				<li><a href="#">私人订制</a></li>
+			</ul>
+			<ul>
+				<li style="font-size: 18px;">运动训练</li>
+				<li><a href="#">滑雪训练</a></li>
+				<li><a href="#">冲浪训练</a></li>
+				<li><a href="#">攀岩训练</a></li>
+				<li><a href="#">赛车训练</a></li>
+				<li><a href="#">跑酷训练</a></li>
+				<li><a href="#">训练方案</a></li>
+			</ul>
+			<ul id="_right">
+				<li style="font-size: 18px;">相关网站</li>
+				<li><a href="#">冰雪汇</a></li>
+				<li><a href="#">冰雪网</a></li>
+				<li><a href="#">冰雪运动</a></li>
+				<li><a href="#">冰雪网络</a></li>
+				<li><a href="#">中冰雪网</a></li>
+				<li><a href="#">鹰飞跳伞</a></li>
+			</ul>
+		<div class="right_part">
+			<span style="font-size: 18px;">FREE官方社交平台</span>
+			<div class="logo">
+				<img src="images/QQa.png" alt="qq" class="small" />
+				<img src="images/wxa.png" alt="wx" class="small" />
+				<img src="images/wba.png" alt="wb" class="small" />
+			</div>
+			<div class="erweima">
+				<img src="images/wxewm.jpg" id="big" />
+			</div>
+		</div>
+		<div class="bottom">
+				© 2019-2022  FREE网站(206宿舍)版权所有，并保留所有权利。ICP备案证书号：冀ICP备17127392号 
+		</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/animate.js"></script>
+<script type="text/javascript" src = "js/rightdown.js">
+</script>
+<script type="text/javascript" src = "js/爱好.js">
+</script>
+<script type="text/javascript" src = "js/foot.js">
+</script>
+<script type="text/javascript">
+	var slider = document.getElementById("slider");
+    var index = 0;
+    var isMoving = false;
+
+    function next(){
+        if(!isMoving){
+            isMoving = true;
+            index++;
+            animate(slider,{left:-1535*index},function(){
+                if(index == 4){
+                    slider.style.left = "0px";
+                    index = 0;
+                }
+                isMoving = false;
+            });
+        }
+    }
+    setInterval(next,3000);
+</script>
+</html>
