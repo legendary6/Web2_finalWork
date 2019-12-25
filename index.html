@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>FREE 首页</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/foot.css">
 </head>
 <body>
 	<!-- 导航栏 -->
@@ -13,11 +14,11 @@
 			<div class="left">FREE</div>
 			<!-- 右侧导航栏 -->
 			<ul class="right">
-				<li><a href="#" id="selected">Home</a></li>
-				<li><a href="#">李金桀</a></li>
-				<li><a href="#">林文钦</a></li>
-				<li><a href="#">苗雨</a></li>
-				<li><a href="#">张庆梁</a></li>
+				<li><a href="#" id="selected" class="pos">Home</a></li>
+				<li><a href="#" class="pos">极限运动</a></li>
+				<li><a href="#" class="pos">板块分类</a></li>
+				<li><a href="#" class="pos">精彩展示</a></li>
+				<li><a href="#" class="pos">联系我们</a></li>
 			</ul>
 		</div>
 	</div>
@@ -36,107 +37,302 @@
 	<div id="news1" class="text-center">
 		<div class="container">
 			<div class="left">
-				<img src="images/lingge.jpg">
+				<h1>ABOUT EXTREME SPORTS</h1>
+				<h2>关于极限运动</h2>
+				<div id="orangebarstyle"></div>
+				<p>
+					极限运动，是结合了一些难度较高，且挑战性较大之组合运动项目的统称，例如：速降、滑板、极限单车、攀岩、雪板、空中冲浪、街道疾降、跑酷、 极限越野、极限滑水、极限轮滑，漂移板等等都是极限运动项目。
+				</p>
+				<div class="secon">查看详情</div>
 			</div>
-			<div class="right">
-				<div class="content">
-					<div>
-                        <div>
-                            <h4>About us</h4>
-                            <h2>Some words <strong>about us</strong></h2><hr>
-                        </div>
-                        <p>We love building and rebuilding brands through our specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.</p>
-                        <ul>
-                           <li> Mission We deliver uniqueness and quality</li>
-                           <li> Mission We deliver uniqueness and quality</li>
-                           <li> Mission We deliver uniqueness and quality</li>
-                           <li> 随后再改，形式多样化</li>
-                        </ul>
-                    </div>
+			<div class="right" id="_right_">
+				<div class = "slider0" id="slider0">
+					<div class="slide0"><img src="images/lunbo3.jpg" alt=""></div>
+					<div class="slide0"><img src="images/lunbo1.jpg" alt=""></div>
+					<div class="slide0"><img src="images/lunbo2.jpg" alt=""></div>
+					<div class="slide0"><img src="images/lunbo3.jpg" alt=""></div>
+					<div class="slide0"><img src="images/lunbo1.jpg" alt=""></div>
+				</div>
+				<span id="left_first"><</span>
+				<span id="right_first">></span>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- 过渡介绍分类1 -->
+	<div class="text-center" id="intro">
+		<div class="over">
+			<div class="head">
+				Some categories of<span> EXTREME SPORTS</span>
+			</div>
+			<div id="downscroll">
+				<img src="images/down.png" />
+			</div>
+		</div>
+	</div>
+	<!-- 分页切换设计 -->
+	<div class="wrapper" id="main">
+		<div class="box">
+			<img src="images/skiing.png" alt="pic1" id="image" />
+			<span id="up"><</span>
+			<span id="down">></span>
+			<div class="menu" id="box">
+				<div class="slider" id="slider">
+					<div class="slide" name="4">
+						<div><img src="images/climb.png"></div>
+						<span>攀岩运动板块</span>
+					</div>
+					<div class="slide" name="5">
+						<div><img src="images/shop.png"></div>
+						<span>运动商城板块</span>
+					</div>
+					<div class="slide" name="1" id="active">
+						<div><img src="images/skismall.png"></div>
+						<span>滑雪运动板块</span>
+					</div>
+					<div class="slide" name="2">
+						<div><img src="images/surf.png"></div>
+						<span>翼装飞行板块</span>
+					</div>
+					<div class="slide" name="3">
+						<div><img src="images/car.png"></div>
+						<span>赛车运动板块</span>
+					</div>
+					<div class="slide" name="4">
+						<div><img src="images/climb.png"></div>
+						<span>攀岩运动板块</span>
+					</div>
+					<div class="slide" name="5">
+						<div><img src="images/shop.png"></div>
+						<span>运动商城板块</span>
+					</div>
+					<div class="slide" name="1">
+						<div><img src="images/skismall.png"></div>
+						<span>滑雪运动板块</span>
+					</div>
+					<div class="slide" name="2">
+						<div><img src="images/surf.png"></div>
+						<span>冲浪运动板块</span>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="box_hidden" name="1" style="display: block; top: 210px">
+					<h3>滑 雪</h3>
+					<p>
+						滑雪运动是运动员把滑雪板装在靴底上在雪地上进行速度、跳跃和滑降的竞赛运动。立、板、雪、滑是滑雪运动的关键要素。
+					</p>
+					<span class="goRight"><a href="#" id="right">查看分页 →</a> </span>
+				</div>
+				<div class="box_hidden" name="2">
+					<h3>翼装飞行</h3>
+					<p>
+						翼装飞行（Wingsuit Flying）是指运动员穿戴着拥有双翼的飞行服装和降落伞设备，运用肢体动作来掌控滑翔方向，用身体进行无动力空中飞行的运动，运动员将打开降落伞平稳着落。
+					</p>
+					<span class="goRight"><a href="#" id="right">查看分页 →</a> </span>
+				</div>
+				<div class="box_hidden" name="3">
+					<h3>方程式赛车</h3>
+					<p>
+						方程式赛车必须依照国际汽车联合会制定颁发的车辆技术规则规定的程式制造，包括车体结构、发动机工作容积、汽缸数量、轮胎的距离和大小等。
+					</p>
+					<span class="goRight"><a href="#" id="right">查看分页 →</a> </span>
+				</div>
+				<div class="box_hidden" name="4">
+					<h3>攀 岩</h3>
+					<p>
+						攀岩（Rock Climbing）运动有“岩壁芭蕾”、“峭壁上的艺术体操”等美称，由登山运动衍生而来，富有很强的技巧性、冒险性，是极限运动中的一个重要项目，在世界上十分流行。
+					</p>
+					<span class="goRight"><a href="#" id="right">查看分页 →</a> </span>
+				</div>
+				<div class="box_hidden" name="5">
+					<h3>运动商城</h3>
+					<p>
+						运动商城旨在整合国内外广大品牌商、生产商，为商家和运动爱好者之间提供一站式产品购销解决方案。运动商城专注各种极限运动商品。
+					</p>
+					<span class="goRight"><a href="#" id="right">查看分页 →</a> </span>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- 分页切换设计 -->
-	<div class="wrapper">
-		<div class="box">
-			<img src="images/i_one_img1.jpg" alt="pic1" id="image" />
-			<span id="up"><</span>
-			<span id="down">></span>
-			<div class="menu" id="box">
-				<div class="slider" id="slider">
-					<div class="slide" name="4">div1(4)</div>
-					<div class="slide" name="5">div2(5)</div>
-					<div class="slide" name="1" id="active">div3(1)</div>
-					<div class="slide" name="2">div4(2)</div>
-					<div class="slide" name="3">div5(3)</div>
-					<div class="slide" name="4">div6(4)</div>
-					<div class="slide" name="5">div7(5)</div>
-					<div class="slide" name="1">div8(1)</div>
-					<div class="slide" name="2">div9(2)</div>
-				</div>
+	<!-- 过渡介绍分类 2-->
+	<div class="text-center" id="intro2">
+		<div class="over2">
+			<div class="head2">
+				Some of the <span> PICTURE SHOWS</span>
 			</div>
-			<div class="content">
-				<div class="box_hidden" name="1" style="display: block; top: 210px">
-					<h3>主题(滑雪？)1</h3>
-					<p>
-						以创意元素设计，结合企业品牌定位，充分了解企业文化，由资深设计师为您打造令人眼前一亮精品网站
-					</p>
-					<span class="" ="goRight"><a href="#" id="right">查看案例 →</a> </span>
-				</div>
-				<div class="box_hidden" name="2">
-					<h3>主题(滑雪？)2</h3>
-					<p>
-						以创意元素设计，结合企业品牌定位，充分了解企业文化，由资深设计师为您打造令人眼前一亮精品网站
-					</p>
-					<span class="goRight"><a href="#" id="right">查看案例 →</a> </span>
-				</div>
-				<div class="box_hidden" name="3">
-					<h3>主题(滑雪？)3</h3>
-					<p>
-						以创意元素设计，结合企业品牌定位，充分了解企业文化，由资深设计师为您打造令人眼前一亮精品网站
-					</p>
-					<span class="goRight"><a href="#" id="right">查看案例 →</a> </span>
-				</div>
-				<div class="box_hidden" name="4">
-					<h3>主题(滑雪？)4</h3>
-					<p>
-						以创意元素设计，结合企业品牌定位，充分了解企业文化，由资深设计师为您打造令人眼前一亮精品网站
-					</p>
-					<span class="goRight"><a href="#" id="right">查看案例 →</a> </span>
-				</div>
-				<div class="box_hidden" name="5">
-					<h3>主题(滑雪？)5</h3>
-					<p>
-						以创意元素设计，结合企业品牌定位，充分了解企业文化，由资深设计师为您打造令人眼前一亮精品网站
-					</p>
-					<span class="goRight"><a href="#" id="right">查看案例 →</a> </span>
-				</div>
+			<div id="downscroll2">
+				<img src="images/down.png" />
 			</div>
 		</div>
 	</div>
 
 	<!-- 新闻区域2 -->
 	<div id="new2" class="text-center">
-		<img src="images/temp.jpg">
+		<div class="box">
+			<div class="small"><img src="images/1.png"></div>
+			<div class="small"><img src="images/2.png"></div>
+			<div class="small"><img src="images/3.png"></div>
+			<div class="small"><img src="images/4.png"></div>
+			<div class="small"><img src="images/5.png"></div>
+			<div class="small"><img src="images/6.png"></div>
+		</div>
 	</div>
-
-	<!-- 过渡区域 -->
-	<div id="cur" class="text-center">
-		<div class="container">
-			<div class="content">
-				在这里写我们想说的话，换我们想要的图片
+	
+	
+	<!-- 过渡介绍分类3 -->
+	<div class="text-center" id="intro3">
+		<div class="over3">
+			<div class="head3">
+				CONTACT <span>WITH US</span>
+			</div>
+			<div id="downscroll3">
+				<img src="images/down.png" />
 			</div>
 		</div>
 	</div>
 
+	<!-- contact with us -->
+	<div class="contact">
+		<div class="contact_center">
+			<div class="left">
+               <h3>Hi,ARE YOU READY?</h3>
+               <h4>对我们有什么建议？</h4>
+               <h4>那就与我们取得联系吧!</h4>
+               <div class="div1"></div>
+               <p>让我们听到您的声音!</p>
+               <p>
+               		您可以填写右边的表格，让我们了解自身问题所在，这是一个良好的开始，我们将对您的建议表示感谢。
+               </p>
+               <p id="bar1" class="bar">19832105929</p>
+               <p id="bar2" class="bar">在线咨询</p>
+			</div>
+			<div class="right">
+				<h3>请填写您的反馈信息</h3>
+				<div style="margin-top: 10px;">
+    				您的姓名：<input name="txtName" type="text"  autocomplete="off" class="inp">
+				</div>
+				<p class="notice"></p>
+				<div>
+    				您的QQ：<input name="txtName" type="text" autocomplete="off" class="inp">
+				</div>
+				<p class="notice"></p>
+				<div>
+					<p>请告诉我们您的反馈</p>
+					<textarea class="inp"></textarea>
+				</div>
+
+				<p class="notice"></p>
+				<p id="getcode">
+					<input class="inpcode" type="text" placeholder="验证码">
+				</p>
+				<button class="getCode">获取验证码</button>
+				<p class="codeImg">
+					<!-- 点击‘获取验证码’按钮后，在此处添加 验证码图片的img标签 -->
+				</p>
+				<p class="notice"></p>
+				<input class="btnmess_btn" type="submit" value="提交">
+			</div>
+		</div>
+	</div>
 
 	<!-- foot -->
-	<div class="foot">
-		
+	<div class="foot" id="foot">
+		<div class="foot_center">
+			<ul id="first">
+				<li style="font-size: 18px;">关于我们</li>
+				<li><a href="#">团队介绍</a></li>
+				<li><a href="#">加入我们</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">联系白维扬</a></li>
+				<li><a href="#">团队分工合作</a></li>
+				<li><a href="#">团队成员关系</a></li>
+			</ul>
+			<ul>
+				<li style="font-size: 18px;">运动商城</li>
+				<li><a href="#">跳转商城</a></li>
+				<li><a href="#">今日秒杀</a></li>
+				<li><a href="#">装备推荐</a></li>
+				<li><a href="#">以旧换新</a></li>
+				<li><a href="#">积分商城</a></li>
+				<li><a href="#">私人订制</a></li>
+			</ul>
+			<ul>
+				<li style="font-size: 18px;">运动训练</li>
+				<li><a href="#">滑雪训练</a></li>
+				<li><a href="#">冲浪训练</a></li>
+				<li><a href="#">攀岩训练</a></li>
+				<li><a href="#">赛车训练</a></li>
+				<li><a href="#">跑酷训练</a></li>
+				<li><a href="#">训练方案</a></li>
+			</ul>
+			<ul id="_right">
+				<li style="font-size: 18px;">相关网站</li>
+				<li><a href="#">冰雪汇</a></li>
+				<li><a href="#">冰雪网</a></li>
+				<li><a href="#">冰雪运动</a></li>
+				<li><a href="#">冰雪网络</a></li>
+				<li><a href="#">中冰雪网</a></li>
+				<li><a href="#">鹰飞跳伞</a></li>
+			</ul>
+		<div class="right_part">
+			<span style="font-size: 18px;">FREE官方社交平台</span>
+			<div class="logo">
+				<img src="images/QQa.png" alt="qq" class="small1" />
+				<img src="images/wxa.png" alt="wx" class="small1" />
+				<img src="images/wba.png" alt="wb" class="small1" />
+			</div>
+			<div class="erweima">
+				<img src="images/wxewm.jpg" id="big" />
+			</div>
+		</div>
+		<div class="bottom">
+			© 2019-2022  FREE网站(206宿舍)版权所有，并保留所有权利。ICP备案证书号：冀ICP备17127392号 
+		</div>
+		</div>
+	</div>
+
+	<div id="topTop">
+		<img src="images/回到顶部.png"/>
 	</div>
 </body>
 <script src = "js/animate.js"></script>
 <script src = "js/index.js"></script>
+<script src="js/foot.js"></script>
+<script src="js/smallScroll.js"></script>
+<script src="js/inpcode.js"></script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
